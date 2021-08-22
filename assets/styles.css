@@ -1,17 +1,10 @@
-
-/*
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }  
-  */
-
+/* //// Estab color variable for container//// */
   :root {
       --containerColor: rgb(170, 203, 209);
+      --sidebarColor: rgb(170, 203, 209)
   }
   
-  /* ////Body//// */
+  /* //// Set body background color//// */
   
   body {
       background-color: rgb(170, 203, 209);
@@ -19,7 +12,7 @@
   
 
 
-  /* ////Header//// */
+  /* ////Header format//// */
   
   .header {
       padding: 20px;
@@ -32,9 +25,11 @@
   /* ////Header h1//// */
   .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 48px; 
+    
   }
   
+
   /* ////Header section//// */
   .header section {
     padding-top: 15px;
@@ -50,6 +45,10 @@
   .header section ul {
       list-style-type: none;
       padding: 30px;
+      position: relative;
+      top: 35px;
+      right: 10px;
+      
   }
   
   
@@ -57,22 +56,49 @@
   .header section ul li {
     display: inline-block;
     margin-left: 25px;
+    padding-bottom: 15px;
+  }
+
+  /* ///Estab header image settings//// */
+.header img {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px;
+    width: 150px;
+    float: left;
+    position: relative;
+    bottom: 22px;
+    right: 10px;   
+    max-width: 100%;
+    height: auto;
+
+}
+
+  /* ///Set centered alignment for About h2/// */
+  .about h2{
+    text-align:center;
+  }
+
+
+/* ///Set centered alignment for About paragraph/// */
+  .about p {
+    text-align:center
   }
   
-  /* ////Anchor style//// */
+  /* ////Set anchor color & style//// */
   a {
     color: white;
     text-decoration: none; /* remove underline */
   }
 
 
-
-  /* Container */ 
+  /* ///Set container style*/ 
 .container1 section {
     background: rgb(159, 168, 177);
     padding: 50px;
   }
   
+  /* ///Set grid columns & format within container/// */
   .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -86,9 +112,10 @@
       "sidebar2 sidebar2 footer footer footer footer footer footer";
   }
 
-/* Grid classes */
-.sidebar {
+/* Estab class styles*/
+.container1 .sidebar {
     grid-area: sidebar;
+    background-color: var(--sidebarColor);
 }
 
 .sidebar p {
@@ -102,8 +129,9 @@
     font-size: 26px;
 }
 
-.sidebar2 {
+.container1 .sidebar2 {
     grid-area: sidebar2;
+    background-color: var(--sidebarColor);
 }
 
 .sidebar2 p {
@@ -118,7 +146,7 @@
 }
       
 
-/* Grid classes */
+/* Set grid classes */
  .work {
     grid-area: work;
    }
