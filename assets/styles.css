@@ -22,13 +22,21 @@
   }
   
   
-  /* ////Header h1//// */
+  /* ////Header h1//// 
   .header h1 {
     display: inline-block;
     font-size: 48px; 
     
+  } */
+
+  .header h1 {
+    display: inline-block;
+    font-size: 48px; 
+    display: flex
+    justify-content: space-between;
+    flex-wrap: wrap; 
   }
-  
+
 
   /* ////Header section//// */
   .header section {
@@ -42,22 +50,42 @@
   
   
   /* ////Header unordered list//// */
+  /*
   .header section ul {
       list-style-type: none;
       padding: 30px;
       position: relative;
       top: 35px;
-      right: 10px;
-      
+      right: 10px; 
+  } */
+
+  /* ///Header menu properties with flex/// */
+  .header section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
   }
   
   
   /* ////Header unordered list//// */
+  /*
   .header section ul li {
     display: inline-block;
     margin-left: 25px;
     padding-bottom: 15px;
+  } */
+
+  .header section ul li {
+    margin: 0 25px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+  
   }
+
+
+
 
   /* ///Estab header image settings//// */
 .header img {
@@ -71,6 +99,9 @@
     right: 10px;   
     max-width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -118,6 +149,8 @@
     background-color: var(--sidebarColor);
 }
 
+
+/* ///1st Sidebar class properties/// */
 .sidebar p {
     margin-left: 20px
   }
@@ -134,6 +167,8 @@
     background-color: var(--sidebarColor);
 }
 
+
+/* ///2nd Sidebar class properties/// */
 .sidebar2 p {
     margin-left: 20px
   }
@@ -154,35 +189,67 @@
    .p1 {
      grid-area: p1;
    }
-   
+
+
+   .p1 img {
+    border: 1px solid white;
+    width: 100%;
+    height: auto%;
+  }
+
+  
  .p2 {
    grid-area: p2;
  }
  
+ .p2 img {
+    border: 1px solid white;
+    width: 100%;
+    height: auto%;
+  }
+
+
+
    .p3 {
      grid-area: p3;
    }
  
+   .p3 img {
+    border: 1px solid white;
+    width: 100%;
+    height: auto%;
+  }
+
  
   .p4 {
      grid-area: p4;
    }
- 
 
+   .p4 img {
+    border: 1px solid white;
+    width: 100%;
+    height: 67%;
+  }
+ 
+  /* ///Footer class properties/// */
  .footer {
    grid-area: footer;
+   flex-wrap: wrap;
+  
  }
  
-
+ /* ///Footer unordered list properties/// */
  .footer ul {
     list-style-type: none;
         padding: 30px;
   }
   
-  
+  /* ///Footer unordered list line properties/// */
   .footer ul li {
-    display: inline-block;
-      margin-left: 25px;
+    display: flex;
+    margin-left: 25px;
+    justify-content: space-between;
+      
   }
    
   
